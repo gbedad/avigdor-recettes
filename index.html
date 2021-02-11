@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles.css" ref="stylesheet" type="text/css">
+        <Title>
+            Recette de Mamie Mireille
+        </Title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
+<style>
+    * {
+    box-sizing: border-box;
+}
+body { 
+width: 100%;
+margin:0 auto;
+background-color: rgb(200, 200, 200);
+font-family:'Poppins', sans-serif;
+    }
+.pdh {
+height: 80px;
+padding: 20px;
+box-sizing: border-box;
+
+}
+h1{
+margin-top: 0;
+font-size:50px ;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+line-height: 80px;
+color: rgb(100, 100, 100)
+
+}
+h4 {
+text-align: center;
+}
+span {
+font-size: 15px;
+font-weight: 600;
+}
+
+ul, ol {
+font-size: 13px;
+}
+.img {
+width:100%;
+height:200px;
+object-fit: cover;
+}
+
+
+.sec-entre{
+border: green 0.5px solid;
+width: 90%;
+padding:20px;
+margin: 20px auto;
+background-color: rgb(225, 225, 225)  ;
+display:flex;
+border-radius: 10px;
+overflow-x: scroll;
+align-items: flex-start;
+-ms-overflow-style: none; 
+scrollbar-width: none;   
+margin-bottom: 50px;
+}
+.sec-entre::-webkit-scrollbar {
+display: none;
+}
+.div-ingredients {
+padding: 10px;
+
+}
+.sec-plat{
+padding: 20px;
+display:flex;
+margin:0 auto;
+justify-content: flex-start;
+border:green 0.5px solid;
+border-radius: 10px;
+background-color:rgb(150, 150, 150) ;
+width:90%;
+overflow-x: scroll;
+align-items: flex-start;
+-ms-overflow-style: none; 
+scrollbar-width: none; 
+margin-bottom: 50px;
+}
+.sec-plat::-webkit-scrollbar{
+    display:none;
+}
+.sec-dessert{
+padding: 20px;
+display:flex;
+justify-content: flex-start;
+align-items: center;
+border: rgb(255, 0, 0) 0.5px solid;
+background-color: rgb(100, 100, 100);
+border-radius: 10px;
+width:90%;
+overflow-x: scroll;
+align-items: flex-start;
+-ms-overflow-style: none; 
+scrollbar-width: none;
+margin:20px auto;
+margin-bottom: 50px;
+}
+.sec-dessert::-webkit-scrollbar{
+    display:none;
+}
+
+.card-plat{
+border: black 1px solid;
+width:400px;
+padding: 6px;
+border-radius: 10px;
+box-shadow: 1px 1px  2px ;
+background-color: rgb(245, 245, 245);
+margin-top:12px ;
+margin-right: 50px;
+overflow-y: scroll;
+-ms-overflow-style: none; 
+scrollbar-width: none;
+flex-shrink: 0;
+height:600px;
+}
+.card-plat::-webkit-scrollbar {
+display: none;
+}
+.card-plat:hover {
+transform: scale(1.03);
+transition: ease-in-out;
+transition-duration: 300ms;
+}
+.card-entre{
+border: black 1px solid;       
+box-shadow: 1px 1px  2px ;
+background-color: rgb(245, 245, 245);
+margin-right: 50px;
+margin-top:12px ;
+width: 400px;
+height: 600px;
+padding: 6px;
+border-radius: 10px;
+overflow-y: scroll; 
+-ms-overflow-style: none; 
+scrollbar-width: none;
+flex-shrink: 0;  
+}
+.card-entre::-webkit-scrollbar {
+display: none;
+}
+
+.card-entre:hover {
+transform: scale(1.03);
+transition: ease-in-out;
+transition-duration: 300ms;
+}
+
+.card-dessert{
+border: black 1px solid;
+width:400px;
+height:600px;
+padding: 6px;
+border-radius: 10px;
+box-shadow: 1px 1px  2px ;
+background-color: rgb(245, 245, 245);
+margin-top:12px ;
+margin-right: 50px;
+overflow-y: scroll;
+-ms-overflow-style: none; 
+scrollbar-width: none;
+flex-shrink: 0;
+}
+.card-dessert:hover {
+transform: scale(1.03);
+transition: ease-in-out;
+transition-duration: 300ms;
+}
+.card-dessert::-webkit-scrollbar {
+display: none;
+}
+
+.div-entre{
+padding: 15px;
+width: 150px;
+margin-right:15px;
+flex-shrink: 0;
+text-align: center;
+margin: auto 0;
+}
+.color-entre{
+    color:green;
+}
+.color-plat{
+    color:rgb(150, 255,0)
+}
+.color-dessert{
+    color:rgb(255, 142, 0)
+}
+
+.footer{
+background-color: black;
+color: white;
+text-align: center;
+border: cyan 5px solid;
+height: 80px;
+font-size: 3em;
+}
+
+@media only screen and (max-width: 600px) {
+.sec-entre, .sec-plat, .sec-dessert { 
+margin-top: 100px;
+display: flex;
+flex-direction : column;
+                                    }
+                                           }
+
+</style>
+        
+    </head>
+    <body class="body">
+        <header class="pdh">
+            <h1>
+                Les recettes de Mamie Mireille
+            </h1>
+           
+        </header>
+        
+        
+        
+        <section class="sec-entre">
+            <div class="div-entre color-entre">
+            <h2>Les entrées:</h2>
+            </div>
+            <div class="card-entre">
+                <h4>
+                    Aubergines à la chermoulah (4 personnes)
+                </h4>
+                <img class="img" src="assets\index.jpg"/>
+                <div class = "div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li>2 aubergines</li>
+                        <li>2 gousses d'ail ecrasés</li>
+                        <li>2.c à café de conriandre en poudre</li>
+                        <li>2.c à café de cumin en poudre</li>
+                        <li>1.c à café de piment de cayenne(moins si personne sensible  </li>
+                        <li>1.c à café de paprika doux</li>
+                        <li>2 c. à soupe de citron confit emincé finement</li>
+                        <li>15 cl d'huile d'olive</li>
+                        <li>2 aubergines</li>
+                        <li>120g de yaourt grec </li>
+                    </ul> 
+                    <h5>Si vous voulez une recette plus compléte.</h5>
+                    <ul>   
+                        <li>150g de boulgour</li>
+                        <li>50g de raisin sec</li>
+                        <li>50g d'olive vertes</li>
+                        <li>30g d'amande effilées</li>
+                        <li>3 oignons nouveaux(sorte d'oignon)</li>
+                        <li>1 cuillère de jus de citron</li>
+                        <li>10g de menthe fraiche</li>
+                        <li>10g de coriandre fraiche</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li>Préchauffez le four à 200° ou th6~7</li>
+                        <li>Prenez un saladier dans lequel vous  mélangez l'ail, le cumin la coriandre en poudre le piment de cayenne, le paprika le citron confit et 10cl d'huile d'olive et 1 demi cuillère à café de sel </li>
+                        <li>Mélangez pendant au moins 5 minutes</li>
+                        <li>Coupez chaque aubergine en deux dans la longueur puis incisez chaque moitié de profondes entailles diagonales(une dizaine d'entailles par moitié</li>
+                        <li>Sur chaque moitié, vous devrez étalez le mélange crée plus tot appelé chermoulah </li>
+                        <li>Installez une plaque à patisserie dans le four et installez les 4 moitiés cotés chermoulah vers le ciel</li>
+                        <li>laissez rotir pendant 40 minutes environ (jusqu'a que la chair des aubergines soit bien tendre)</li>
+                        <li>Sortir du four et mettez le yaourt sur les aubergines</li>
+                        <li>servez dans de petites assietes</li>
+                    </ol>
+                    <h5>Si vous voulez allez plus loin</h5>
+                    <ol>
+                        <li>Pendant que les aubergines sont en train de cuire, versez le boulgour dans un grand saladier</li>
+                        <li>Mettre de 15cl d'eau bouillante sur le boulgour</li>
+                        <li>Faire tremper les raisins secs dans un verre d'eau chaude</li>
+                        <li>Faites  les egouttez aprés 10 min dans l'eau</li>
+                        <li>Ajoutez les dans le boulgour faites de même pour les herbes(coriandre et menthe),les olives, les amandes et le jus de citron, ajoutez une pincée de sel</li>
+                        <li>Bien remuez le mélange, ajoutez du sel si nécessaire</li>
+                        <li>Sortez les aubergines du four (demi aubergine par personne)</li>
+                        <li>Garnissez chaque moitié de boulgour(petit conseil: mettez en beaucoup c'est très bon) </li>
+                        <li>Ajoutez du yaourt sur les aubergines et decoré le tout de coriandre fraichement ciselée </li>
+                        <li>Servez dans de grandes assietes </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card-entre">
+                <h4>
+                    Aubergines à la chermoulah (4 personnes)
+                </h4>
+                <img class="img" src="assets\index.jpg"/>
+                <div class = "div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li>2 aubergines</li>
+                        <li>2 gousses d'ail ecrasés</li>
+                        <li>2.c à café de conriandre en poudre</li>
+                        <li>2.c à café de cumin en poudre</li>
+                        <li>1.c à café de piment de cayenne(moins si personne sensible  </li>
+                        <li>1.c à café de paprika doux</li>
+                        <li>2 c. à soupe de citron confit emincé finement</li>
+                        <li>15 cl d'huile d'olive</li>
+                        <li>2 aubergines</li>
+                        <li>120g de yaourt grec </li>
+                    </ul> 
+                    <h5>Si vous voulez une recette plus compléte.</h5>
+                    <ul>   
+                        <li>150g de boulgour</li>
+                        <li>50g de raisin sec</li>
+                        <li>50g d'olive vertes</li>
+                        <li>30g d'amande effilées</li>
+                        <li>3 oignons nouveaux(sorte d'oignon)</li>
+                        <li>1 cuillère de jus de citron</li>
+                        <li>10g de menthe fraiche</li>
+                        <li>10g de coriandre fraiche</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li>Préchauffez le four à 200° ou th6~7</li>
+                        <li>Prenez un saladier dans lequel vous  mélangez l'ail, le cumin la coriandre en poudre le piment de cayenne, le paprika le citron confit et 10cl d'huile d'olive et 1 demi cuillère à café de sel </li>
+                        <li>Mélangez pendant au moins 5 minutes</li>
+                        <li>Coupez chaque aubergine en deux dans la longueur puis incisez chaque moitié de profondes entailles diagonales(une dizaine d'entailles par moitié</li>
+                        <li>Sur chaque moitié, vous devrez étalez le mélange crée plus tot appelé chermoulah </li>
+                        <li>Installez une plaque à patisserie dans le four et installez les 4 moitiés cotés chermoulah vers le ciel</li>
+                        <li>laissez rotir pendant 40 minutes environ (jusqu'a que la chair des aubergines soit bien tendre)</li>
+                        <li>Sortir du four et mettez le yaourt sur les aubergines</li>
+                        <li>servez dans de petites assietes</li>
+                    </ol>
+                    <h5>Si vous voulez allez plus loin</h5>
+                    <ol>
+                        <li>Pendant que les aubergines sont en train de cuire, versez le boulgour dans un grand saladier</li>
+                        <li>Mettre de 15cl d'eau bouillante sur le boulgour</li>
+                        <li>Faire tremper les raisins secs dans un verre d'eau chaude</li>
+                        <li>Faites  les egouttez aprés 10 min dans l'eau</li>
+                        <li>Ajoutez les dans le boulgour faites de même pour les herbes(coriandre et menthe),les olives, les amandes et le jus de citron, ajoutez une pincée de sel</li>
+                        <li>Bien remuez le mélange, ajoutez du sel si nécessaire</li>
+                        <li>Sortez les aubergines du four (demi aubergine par personne)</li>
+                        <li>Garnissez chaque moitié de boulgour(petit conseil: mettez en beaucoup c'est très bon) </li>
+                        <li>Ajoutez du yaourt sur les aubergines et decoré le tout de coriandre fraichement ciselée </li>
+                        <li>Servez dans de grandes assietes </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card-entre">
+                <h4>
+                    Aubergines à la chermoulah (4 personnes)
+                </h4>
+                <img class="img" src="assets\index.jpg"/>
+                <div class="div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li>2 aubergines</li>
+                        <li>2 gousses d'ail ecrasés</li>
+                        <li>2.c à café de conriandre en poudre</li>
+                        <li>2.c à café de cumin en poudre</li>
+                        <li>1.c à café de piment de cayenne(moins si personne sensible  </li>
+                        <li>1.c à café de paprika doux</li>
+                        <li>2 c. à soupe de citron confit emincé finement</li>
+                        <li>15 cl d'huile d'olive</li>
+                        <li>2 aubergines</li>
+                        <li>120g de yaourt grec </li>
+                    </ul> 
+                    <h5>Si vous voulez une recette plus compléte.</h5>
+                    <ul>   
+                        <li>150g de boulgour</li>
+                        <li>50g de raisin sec</li>
+                        <li>50g d'olive vertes</li>
+                        <li>30g d'amande effilées</li>
+                        <li>3 oignons nouveaux(sorte d'oignon)</li>
+                        <li>1 cuillère de jus de citron</li>
+                        <li>10g de menthe fraiche</li>
+                        <li>10g de coriandre fraiche</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li>Préchauffez le four à 200° ou th6~7</li>
+                        <li>Prenez un saladier dans lequel vous  mélangez l'ail, le cumin la coriandre en poudre le piment de cayenne, le paprika le citron confit et 10cl d'huile d'olive et 1 demi cuillère à café de sel </li>
+                        <li>Mélangez pendant au moins 5 minutes</li>
+                        <li>Coupez chaque aubergine en deux dans la longueur puis incisez chaque moitié de profondes entailles diagonales(une dizaine d'entailles par moitié</li>
+                        <li>Sur chaque moitié, vous devrez étalez le mélange crée plus tot appelé chermoulah </li>
+                        <li>Installez une plaque à patisserie dans le four et installez les 4 moitiés cotés chermoulah vers le ciel</li>
+                        <li>laissez rotir pendant 40 minutes environ (jusqu'a que la chair des aubergines soit bien tendre)</li>
+                        <li>Sortir du four et mettez le yaourt sur les aubergines</li>
+                        <li>servez dans de petites assietes</li>
+                    </ol>
+                    <h5>Si vous voulez allez plus loin</h5>
+                    <ol>
+                        <li>Pendant que les aubergines sont en train de cuire, versez le boulgour dans un grand saladier</li>
+                        <li>Mettre de 15cl d'eau bouillante sur le boulgour</li>
+                        <li>Faire tremper les raisins secs dans un verre d'eau chaude</li>
+                        <li>Faites  les egouttez aprés 10 min dans l'eau</li>
+                        <li>Ajoutez les dans le boulgour faites de même pour les herbes(coriandre et menthe),les olives, les amandes et le jus de citron, ajoutez une pincée de sel</li>
+                        <li>Bien remuez le mélange, ajoutez du sel si nécessaire</li>
+                        <li>Sortez les aubergines du four (demi aubergine par personne)</li>
+                        <li>Garnissez chaque moitié de boulgour(petit conseil: mettez en beaucoup c'est très bon) </li>
+                        <li>Ajoutez du yaourt sur les aubergines et decoré le tout de coriandre fraichement ciselée </li>
+                        <li>Servez dans de grandes assietes </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card-entre">
+                <h4>
+                    Aubergines à la chermoulah (4 personnes)
+                </h4>
+                <img class="img" src="assets\index.jpg"/>
+                <div class = "div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li>2 aubergines</li>
+                        <li>2 gousses d'ail ecrasés</li>
+                        <li>2.c à café de conriandre en poudre</li>
+                        <li>2.c à café de cumin en poudre</li>
+                        <li>1.c à café de piment de cayenne(moins si personne sensible  </li>
+                        <li>1.c à café de paprika doux</li>
+                        <li>2 c. à soupe de citron confit emincé finement</li>
+                        <li>15 cl d'huile d'olive</li>
+                        <li>2 aubergines</li>
+                        <li>120g de yaourt grec </li>
+                    </ul> 
+                    <h5>Si vous voulez une recette plus compléte.</h5>
+                    <ul>   
+                        <li>150g de boulgour</li>
+                        <li>50g de raisin sec</li>
+                        <li>50g d'olive vertes</li>
+                        <li>30g d'amande effilées</li>
+                        <li>3 oignons nouveaux(sorte d'oignon)</li>
+                        <li>1 cuillère de jus de citron</li>
+                        <li>10g de menthe fraiche</li>
+                        <li>10g de coriandre fraiche</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li>Préchauffez le four à 200° ou th6~7</li>
+                        <li>Prenez un saladier dans lequel vous  mélangez l'ail, le cumin la coriandre en poudre le piment de cayenne, le paprika le citron confit et 10cl d'huile d'olive et 1 demi cuillère à café de sel </li>
+                        <li>Mélangez pendant au moins 5 minutes</li>
+                        <li>Coupez chaque aubergine en deux dans la longueur puis incisez chaque moitié de profondes entailles diagonales(une dizaine d'entailles par moitié</li>
+                        <li>Sur chaque moitié, vous devrez étalez le mélange crée plus tot appelé chermoulah </li>
+                        <li>Installez une plaque à patisserie dans le four et installez les 4 moitiés cotés chermoulah vers le ciel</li>
+                        <li>laissez rotir pendant 40 minutes environ (jusqu'a que la chair des aubergines soit bien tendre)</li>
+                        <li>Sortir du four et mettez le yaourt sur les aubergines</li>
+                        <li>servez dans de petites assietes</li>
+                    </ol>
+                    <h5>Si vous voulez allez plus loin</h5>
+                    <ol>
+                        <li>Pendant que les aubergines sont en train de cuire, versez le boulgour dans un grand saladier</li>
+                        <li>Mettre de 15cl d'eau bouillante sur le boulgour</li>
+                        <li>Faire tremper les raisins secs dans un verre d'eau chaude</li>
+                        <li>Faites  les egouttez aprés 10 min dans l'eau</li>
+                        <li>Ajoutez les dans le boulgour faites de même pour les herbes(coriandre et menthe),les olives, les amandes et le jus de citron, ajoutez une pincée de sel</li>
+                        <li>Bien remuez le mélange, ajoutez du sel si nécessaire</li>
+                        <li>Sortez les aubergines du four (demi aubergine par personne)</li>
+                        <li>Garnissez chaque moitié de boulgour(petit conseil: mettez en beaucoup c'est très bon) </li>
+                        <li>Ajoutez du yaourt sur les aubergines et decoré le tout de coriandre fraichement ciselée </li>
+                        <li>Servez dans de grandes assietes </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="card-entre">
+                <h4>
+                    Potimarron épicée(2 personnes)
+                </h4>
+                <img class="img" src="assets\potimarron-rôti-aux-herbes-680x453.jpg">
+                <div class = "div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li> 2 potimarrons</li>
+                        <li>huile d'olive</li>
+                        <li>paprika doux</li>
+                        <li>curcumin</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <section class="sec-plat">
+            <div class="div-entre color-plat">
+            <h2>Les plats:</h2>
+            </div>
+            <div class="card-plat">
+                <h4>
+                    Tortillas frits à la provençale(1 personne)
+                </h4>
+                <img class="img" src="assets\tacos.jpg"/>
+                <div class="div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li>2 tomates coktails</li>
+                        <li>3 oeufs</li>
+                        <li>25g de thon en boite</li>
+                        <li>50g de fromages rapés</li>
+                        <li> 1 demi verre de farine</li>
+                        <li> 1 demi verre de panure</li>
+                        <li>mayonnaise (selon les gouts)</li>
+                        <li>2 tortillas</li>
+                        <li>Herbes de provence</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li>Coupez chaque tomate en 8</li>
+                        <li> Faire cuire 2 oeuf pendant  4 min dans de l'eau bouillante </li>
+                        <li>Prenez le thon et les 2 oeufs mettez les dans un bol et ajoutez la mayonnaise(autant que vous voulez)</li>
+                        <li>Ensuite prenez le fromage, étalez sur un quart d'une tortilla, faites pareil pour le mélange oeufs/thon/mayonnaise mais cette fois-çi qui prend la moitié de la tortilla   </li>
+                        <li>Ajoutez les tomates sur le quart restant </li>
+                        <li>Pour terminer, avant de fermer votre tortillas ajouter les herbes de provences</li>
+                        <li>Mettez de la farine dans une assiette pareil pour la panure</li>
+                        <li>Mettez le dernier oeuf(cru) dans un bol puis battez le pour crée un melange homogène puis versez dans une assiette creuse   </li>
+                        <li>Si le tacos est trop mouillé (a cause des tomates)prenez le 2ème tortillas et enroulé le autour du premier </li>
+                        <li>Mettez aloirs le tacos dans la farine puis dans l'oeuf et pour terminez dans la panure</li>
+                        <li>Prenez une poele, et mettez-y beaucoup d'huile (pas d'olive, mais de colza...), deposez la préparation dans la poele </li>
+                        <li>Retournez quand les cotés sont biens dorés</li>
+                        <li>Deposez dans une assietes et ajoutez (dans l'assiette) des garnitures, pour un repas plus équilibré</li>
+                    </ol>
+                </div>
+            </div>
+                <div class="card-plat">
+                    <h4>
+                        Gratin de penne au fromage (2 personne)
+                    </h4>
+                    <img class="img" src="assets\poupou.jpg"/>
+                    <div class="div-ingredients">
+                    <span>Ingrédiens </span>
+                    <ul>
+                        <li>3 grosses tomates ou 4 moyenne</li>
+                        <li>1 cuillère à soupe de concentré de tomate</li>
+                        <li>100g de mozarella</li>
+                        <li>150g de penne</li>
+                        <li>sel et poivre</li>
+                        <li>huile d'olive</li>
+                        <li>100g de fromage rapés</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <h5>!!! ne pas prendre un plat trop grand!!!</h5>
+                    <ol>
+                        <li>préchaufer le four à 210° th7 </li>
+                        <li>faites cuire les pennes dans une grandes casserole d'eau salés et bouillantes pendant le temps indiquait sur la boite de penne</li>
+                        <li>Pendant ce temps, prenez les trois tomates coupez les en tranche et installez les tranches d'une tomate sur un plat à gratin, prenez de l'espace (eparpillé les tranches) </li>
+                        <li>Coupez la mozarella en tranche et mettez la moitié dans le plat,prenez de l'espace</li>
+                        <li>Pour les 2 autre tomates, prenez les  et mettez les dans la casserolle ajoutez le concentrés et 3.c a soupe d'huile d'olive .</li>
+                        <li>Enlevez petit à petit l'eau de la casserole (à l'aide d'une louche) </li>
+                        <li>lorsque la cuisson des pattes est terminer,laissez les pattes et les tomates  mijotez (un petit conseil,prenez une cuillère en bois et melangez)pendant 1min30s </li>
+                        <li>Mettez ensuite la préparation dans le plat, prenez de l'espace</li>
+                        <li>Mettre le fromage rappé et le reste de mozzarella sur le plat</li>
+                        <li>Salez poivrez et rajoutez 2.c à soupe d'huile d'olive</li>
+                        <li>Enfournez pour à peu prés 20 min (ne pas trop cuire quand même si au bout de 15 minutes le plat est coulant et à l'aire d'être pret fiez vous à votre instinc et sortez du four)</li>
+                        <li>Salez et poivrez la preparation sortis du four et attendre 2~3 min avan de servir</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <section class="sec-dessert">
+            <div class= "div-entre color-dessert">
+                <h2>Les dessert:</h2>
+            </div>
+            <div class="card-dessert">
+                <h4>
+                    Tiramisu(4personnes)
+                </h4>
+                <img class="img" src="assets\recette-e28831-tiramisu-minute.jpg">
+                <div class="div-ingredients">
+                    <span>Ingrédients</span>
+                    <ul>
+                        <li>250g de mascarpone</li>
+                        <li>3 oeufs</li>
+                        <li>50g de sucre</li>
+                        <li>1 verre de café</li>
+                        <li>Rhum</li>
+                        <li>1 paquet de biscuit boudoir</li>
+                        <li>Cacao en poudre</li>
+                    </ul>
+                    <span>Préparation</span>
+                    <ol>
+                        <li>Séparer le blanc des jaunes des 3 oeufs</li> 
+                        <li>Prenez les blancs et montez les en neige(conseil de Mireille: mettez du sel dans les blancs avant de les monter pour que la "neige"soit plus ferme)</li> 
+                        <li>Prenez un saladier dans lequel vous mélangez le sucre et le jaune des oeufs jusqu'a que le melange blanchisse(conseil de Mireille: privilégiez le sucre roux pour un tiramisu encore plus savoureux </li> 
+                        <li>Une fois que vous avez bien melangez ajoutez le mascarpone dans le saladier et mélanger jusqu'a obtenir une surface lisse(conseil de Mireille: ajoutez 2/3 .c a café de rhum pour plus de saveur dans le tiramisu ) puis, gardez le mélange au frais</li>
+                        <li>Après avoir montez les blanc en neige, prenez les et versez les, à l'aide d'une spatule dans le mélange mascarpone/jaune  puis mélangez(conseil de Mireille: faites le tres lentement et doucement pour plus de volume)</li> 
+                        <li>Versez la tasse de café (sans lait et sans sucre) dans une assiette creuse et imbibez chaque biscuit de café puis déposez les dans votre plat pour une premiére couche(conseil de Mireille: prenez des petits bol transparent ou vous mettez vos biscuit pour des petites portions individuels et puis, c'est plus jolie!)  </li> 
+                        <li>Recouvrez alors les biscuits imbibés de café du mélange préparé plus tôt</li> 
+                        <li>Deposez alors le plat(ou les petits bols) d'une seconde couche de biscuit boudoir et de mascarpone</li>
+                        <li>Placez au frigo pour au minimum 4 heure(conseil de Mireille: "le mieux c'est 24h car au bout de 24h votre tiramisu est plus ferme"</li>
+                        <li>Avant de servir, saupoudrez le tiramisu de cacao amer ou de copeaux de chocolat </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card-dessert">
+                <h4>
+                    Fondant au chocolat (6 personnes)
+                </h4>
+                <img class="img" src="assets\fondant.jpg">
+                <div>
+                    <ul>
+                        <li>1 tablette de chocolat au lait de 200g</li>
+                        <li>3 oeufs</li>
+                        <li>150g de sucre en poudre</li>
+                        <li>40g de farine</li>
+                        <li>200g de beurre</li>
+                    </ul>
+                    <ol>
+                        <li>Préchaufer le four à 200°(th6~7)</li>
+                        <li>Faites fondre le chocolat et le beurre ensemble au micro onde</li>
+                        <li>Pendant ce temps casser les oeufs et battez les avec le sucre(au batteur si nécessaire) continuer jusqu'a obtenir une belle crème mousseuse </li>
+                        <li>Ajoutez ensuite la farine et le beurre/chocolat que vous avez melangés au préalable</li>
+                        <li>Mélanger puis réserver</li>
+                        <li>Beuurer un moule à manquer</li>
+                        <li>Verser la pâte dans le plat</li>
+                        <li>Faites cuire au four pendant environ 20 minutes </li>
+                        <li>Servez avec une belle boule de glace</li>
+                    </ol>
+                </div>
+            </div>
+            
+
+        </section>
+       
+        
+        
+        <footer class="footer">
+            <span>recette de Mireille sous contrat avec Avigdor Olender</span>
+            <span>2021</span>
+        </footer>
+
+    </body>
+</html>
